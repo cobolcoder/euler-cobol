@@ -1,0 +1,21 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "gnucobol - cobc (single file)",
+            "type": "shell",
+            "command": "cobc",
+            "args": [
+                "-fsyntax-only",
+                "-I${workspaceFolder}\\CopyBooks",
+                "-I${workspaceFolder}\\CopyBooks\\Public",
+                "${file}"
+            ],
+            "problemMatcher": "$gnucobol-cobc",
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            }
+        }
+    ]
+}
